@@ -1,0 +1,268 @@
+* {padding: 0; box-sizing: border-box; margin:0 ; }
+
+/* body {overflow-x: hidden;} */
+
+/* #logo {width:200px; height:200px;}*/
+ 
+.navbar {box-shadow: 0px 2px 5px ; /*background-color:#33ccff;*/ /*border: 2px groove #000;*/  background-repeat:no-repeat; background-size:cover; background-image:url(../../Back%20Ground.jpg);} 
+/*
+.navbar span {font-family: "Comic Sans MS", cursive; font-size:30px; font-weight:bolder; color:rgb(255, 123, 0);margin-top: 5px;}
+
+.navbar #s {font-family: 'Smooch Sans', sans-serif; font-size:40px; font-weight:bolder; color:rgb(0, 92, 230); margin-top: 5px;}
+
+.navbar-brand img {width:50px; height:30px; color: #06F; }*/ 
+
+#home {color:#FFF; font-weight:bolder; font-size:20px; /*-webkit-text-stroke: 1px blue;*/ text-shadow: 1px 1px 1px #00FFFF;}
+#contact {color:#FFF; font-weight:bolder; font-size:20px; /*-webkit-text-stroke: 1px blue;*/ text-shadow: 1px 1px 1px #00FFFF;}
+#about {color:#FFF; font-weight:bolder; font-size:20px;/* -webkit-text-stroke: 1px blue;*/ text-shadow: 1px 1px 1px #00FFFF;}
+#brand {color:#FFF; font-weight:bolder; font-size:20px; /*-webkit-text-stroke: 1px blue;*/ text-shadow: 1px 1px 1px #00FFFF;}
+#product {color:#FFF; font-weight:bolder; font-size:20px; /*-webkit-text-stroke: 1px blue;*/ text-shadow: 1px 1px 1px #00FFFF;}
+#compare {color:#FFF; font-weight:bolder; font-size:20px; /*-webkit-text-stroke: 1px blue;*/ text-shadow: 1px 1px 1px #00FFFF;}
+
+
+
+
+/*#carouselExampleCaptions {margin-top:12px;}*/
+
+#carouselExampleCaptions{width:100%; margin-top:10px;}
+
+/*#col-1 {background-color:#F00; outline:none; width:20px; height:60px; border-radius:5px; }
+#col-2 {background-color:#0C6;}
+#col-3 {background-color:#9FF;}*/
+
+.fa-customize {font-size:;}
+.fa-color {color: ;}
+
+
+#products {text-align:center; padding:10px; background-image:url(../../Back%20Ground.jpg); outline:none; width:280px; height:60px; border-radius:5px; color:#FFF; text-shadow: 1px 1px 1px #00FFFF;}
+
+#brands {text-align:center; padding:10px; background-image:url(../../Back%20Ground.jpg); outline:none; width:280px; height:60px; border-radius:5px; color:#FFF; text-shadow: 1px 1px 1px #00FFFF;}
+
+#sellers {text-align:center; padding:10px; background-image:url(../../Back%20Ground.jpg); outline:none; width:280px; height:60px; border-radius:5px; color:#FFF; text-shadow: 1px 1px 1px #00FFFF;}
+
+
+/*#ac-pic {background-color:#F00; }*/
+
+/*
+#carouselExampleFade {width:500px;}*/
+
+/*.d-block {width:200px; }*/
+
+/*.image-resize {height:250px; object-fit: cover; object-position: center; }*/
+
+#carouselExampleIndicators {width:200px;} 
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-image:url(../../Back%20Ground.jpg); width:900px; border-radius: 5px; box-shadow: 2px 2px 2px #99FFFF;
+border: 1px groove #000; position:absolute;  } 
+
+.flex-container > div {
+ /* background-color: #FFF; border-radius: 5px; border: 1px groove #000;*/
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px; 
+}
+
+
+
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 220px;
+  perspective: 1000px; margin: 10px; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+.flip-card:hover .flip-card-inner {
+  /*transform: rotateY(180deg);*/ transition:all 1.8s;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #FFF; border-radius:5px; border: 1px solid #000;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #FFF;
+  color: white;
+  transform: rotateY(180deg); border-radius:5px; border: 1px solid #000;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-image:url(../../Back%20Ground.jpg); width:900px; border-radius: 5px; box-shadow: 2px 2px 2px #99FFFF;
+border: 1px groove #000; position:absolute;}
+
+
+.title {color:#000; text-align:center; padding-top:70px;}
+
+.box-content {width:100%; height:100%; position:absolute; top:0; left:0;}
+
+
+.box-content:before,
+.box-content:after{ content:""; width:90px; height:25px; background-color:#09F; position:absolute; top:0;bottom:0; margin:auto; transition:all 0.5s; opacity:0;}
+
+
+.box-content:before {left:-20%;}
+.box-content:after {right:-20%;}
+
+
+.flip-card-back:hover .box-content:before {left:10%; opacity:2; margin-bottom:35px; transform:skewX(-30deg); box-shadow: 2px 2px 2px #CCCCCC;}
+.flip-card-back:hover .box-content:after {right:10%; opacity:2; margin-bottom:35px; transform:skewX(-30deg); box-shadow: 2px 2px 2px #CCCCCC;}
+
+
+.content {width:100%; height:45px; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; z-index:1; transform:rotate(90deg); opacity:0;}
+
+.title {color:#FFF; font-size:22px; margin-bottom:7px; text-transform:capitalize; font-style:italic;} 
+
+
+.flip-card-back:hover .content{opacity:1; transform:rotate(0deg); transition:all 0.5s;}
+
+.flip-card-back {overflow:hidden;}
+
+.flex-container {visibility:hidden;}
+
+#ac-pic:hover .flex-container {visibility:visible; position:absolute; cursor:pointer;}  
+
+.container {cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flip-card-front:hover .box-content:before {left:10%; opacity:2; margin-bottom:35px; transform:skewX(-30deg); box-shadow: 2px 2px 2px #CCCCCC;}
+.flip-card-front:hover .box-content:after {right:10%; opacity:2; margin-bottom:35px; transform:skewX(-30deg); box-shadow: 2px 2px 2px #CCCCCC;}
+
+
+.content {width:100%; height:45px; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; z-index:1; transform:rotate(90deg); opacity:0;}
+
+.title {color:#FFF; font-size:22px; margin-bottom:7px; text-transform:capitalize; font-style:italic;} 
+
+
+.flip-card-front:hover .content{opacity:1; transform:rotate(0deg); transition:all 0.5s;}
+
+.flip-card-front {overflow:hidden;}
+
+
+
+
+
+
+/* The animation code */
+/*@keyframes example {
+  from {-webkit-transform:rotateY(180deg);}
+  to {-webkit-transform:rotateY(0deg);}
+}*/
+
+
+/* The element to apply the animation to */
+/*.flip-card .flip-card-inner {
+   animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease-out;
+}
+*/
+
+
+#star {padding-top:150px; width:30px;}
+#star1 {padding-top:150px; width:30px;}
+#star2 {padding-top:154px; width:30px; padding-bottom:5px;}
+#star3 {padding-top:150px; width:34px; padding-bottom:5px;}
+#star4 {padding-top:154px; width:30px; padding-bottom:10px;}
+
+
+p {font-size:14.5px; color:rgb(109, 106, 106);}
+#column {width:auto;}
+#welcome {color:rgb(83, 171, 221); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight:bold;}
+#hello {color:rgb(29, 125, 189);}
+h6 {color: rgb(52, 148, 212); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+#column { max-width: max-content;}
+#column-2 { max-width: max-content;}
+#column-2 li {padding:6px;}
+
+#dot {list-style:none; list-style-image:url(../../../../../Downloads/211620-20.png) ;}
+
+/* #dot li::before {content: "\2022"; color: #09F; font-weight: 600; display: inline-block;margin-left: -1em; font-size: 20px; width: 1em;} 
+*/
+#column-2 h2 {padding-left:16px; color:rgb(29, 125, 189); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+#dot li {color:rgb(109, 106, 106); font-size: 14px; padding:7px;}
+
+#image1 {background-image:url(../../Back%20Ground.jpg); width:150px; height:150px;  border-radius: 50%; margin:auto; padding:30px; outline:none;}
+
+#image2 {background-image:url(../../Back%20Ground.jpg); width:150px; height:150px;  border-radius: 50%; margin:auto; padding:30px; outline:none;}
+
+#image3 {background-image:url(../../Back%20Ground.jpg); width:150px; height:150px; border-radius: 50%; margin:auto; padding:30px; outline:none; }
+
+#month h3 {text-align:center; color:rgb(29, 125, 189); font-weight: bolder;}
+#call h3 {text-align:center; color:rgb(29, 125, 189); font-weight: bolder;} 
+#thumb h3 {text-align:center; color:rgb(29, 125, 189); font-weight: bolder;}
+
+
+#month p {text-align:center; }
+#call p {text-align:center; } 
+#thumb p {text-align:center; }
+
+
+.air-img-1 {padding:10px; padding-top:60px; width:100%; height:auto;}
+.air-img-2 {padding:10px; padding-top:70px; width:100%; height:auto;}
+.air-img-3 {padding:10px; padding-top:70px; width:100%; height:auto;}
+.air-img-4 {padding:10px; padding-top:75px; width:100%; height:auto;}
+
+
+
+#logo-row {background-color:#CCCCCC; height:115px;}
+
+
+#lg 
+#mitsubish 
+#carrier 
+#sanyo 
+
+
+.air-img-11 {width:100%; height:auto;}
+.air-img-22 {width:100%; height:auto; padding-top:15px;}
+.air-img-33 {width:100%; height:auto; padding-top:15px;}
+.air-img-44 {width:100%; height:auto; padding-top:15px;}
+
+
+#footer {background-color:rgb(29, 125, 189); height:50px; color: #FFF; font-size:18px; padding:10px; font-weight:bold; text-shadow: 1px 1px 1px #00FFFF; outline: none;}
